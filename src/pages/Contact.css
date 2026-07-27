@@ -1,0 +1,126 @@
+.contact-page {
+  min-height: calc(100vh - 90px);
+  background: #0e0f12;
+  padding: 60px 24px 100px;
+  box-sizing: border-box;
+}
+
+.contact-header {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.contact-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #6b6f78;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.contact-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: #f0f0f0;
+  margin: 0 0 12px;
+}
+
+.contact-subtitle {
+  color: #7a7f88;
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #b0b3ba;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-input,
+.contact-textarea {
+  background: #1a1c21;
+  border: 1px solid #2f323a;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #f0f0f0;
+}
+
+.contact-textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  padding: 11px 32px;
+  border: 1px solid #f0f0f0;
+  border-radius: 999px;
+  background: none;
+  color: #f0f0f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-submit:hover {
+  background: #f0f0f0;
+  color: #0e0f12;
+}
+
+.contact-status {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.contact-status.success {
+  color: #7dd88f;
+}
+
+.contact-status.error {
+  color: #e08585;
+}
+
+.contact-socials {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 32px;
+  border-top: 1px solid #24262c;
+}
+
+.contact-social-link {
+  color: #9a9da4;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-social-link:hover {
+  color: #f0f0f0;
+}

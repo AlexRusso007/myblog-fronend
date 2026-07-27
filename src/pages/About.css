@@ -1,0 +1,86 @@
+.about-page {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: #0e0f12;
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
+
+.about-left {
+  max-width: 520px;
+}
+
+.about-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #6b6f78;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.about-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  color: #f0f0f0;
+  margin: 0 0 24px;
+  line-height: 1.15;
+}
+
+.about-text {
+  color: #a3a7b0;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+.box{
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.about-right {
+  flex-shrink: 0;
+}
+
+.about-photo-frame {
+  width: min(42vw, 350px);
+  height: min(42vw, 350px);
+  border-radius: 50%;
+  border: 1px solid #2f323a;
+  padding: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-photo-frame:hover {
+  border-color: #f0f0f0;
+  transform: scale(1.03);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .about-left {
+    max-width: 100%;
+  }
+
+  .about-photo-frame {
+    width: 200px;
+    height: 200px;
+  }
+}

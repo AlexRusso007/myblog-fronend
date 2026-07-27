@@ -1,0 +1,113 @@
+.blog-page {
+  min-height: calc(100vh - 90px);
+  background: #fafaf8;
+  padding: 60px 24px 100px;
+  box-sizing: border-box;
+
+}
+
+.blog-status {
+  text-align: center;
+  padding: 60px;
+  color: #444;
+}
+
+.blog-header {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+ 
+}
+
+.blog-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.blog-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #111;
+  margin: 0;
+}
+
+
+
+.post-card {
+  width: 100%;
+  border-bottom: 1px solid #e5e3df;
+  padding-bottom: 28px;
+
+}
+
+.post-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  color: #111;
+  margin: 0 0 6px;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  margin: 0 0 14px;
+}
+
+.post-content {
+  color: #3d3d3d;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.post-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #111;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.post-toggle:hover {
+  opacity: 0;
+}
+
+.blog-list {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 40px;
+ 
+}
+
+.blog-cat-img {
+  width: 160px;
+  height: auto;
+  opacity: 1;
+  margin-top: 10px;
+
+}
+
+.post-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 14px 0;
+}
+.blog-footer-cat {
+  position: absolute;
+  right: -200px;
+  bottom: 280px;
+}
