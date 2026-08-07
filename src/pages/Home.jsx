@@ -23,7 +23,7 @@ function Home() {
 
       <div className="hero-left">
         <p className="hero-eyebrow">Portfolio &amp; Blog</p>
-        <h1 className="hero-name">Gulsevar<br />Jabbarova</h1>
+        <h1 className="hero-name">Lara Smith</h1>
         <p className="hero-tagline">
           <a href=""
           className='hisay'>Hi buddy .  </a> I'm addicted to learning new things. If something sparks my curiosity  I have to figure out how it works. That's how I ended up obsessed with business, AI, and building projects.

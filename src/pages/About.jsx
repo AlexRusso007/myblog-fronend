@@ -5,7 +5,7 @@ function About() {
     <div className="about-page">
       <div className="about-left">
         <p className="about-eyebrow">About Me</p>
-        <h1 className="about-title">Hi . I'm Gulsevar</h1>
+        <h1 className="about-title">Hi . I'm Lara</h1>
 
         <p className="about-text">
           
