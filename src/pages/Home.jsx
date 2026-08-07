@@ -6,7 +6,7 @@ function Home() {
   const [resumeUrl, setResumeUrl] = useState(null);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/resume/')
+    axios.get('https://myblog-4thg.onrender.com/api/resume/')
       .then((res) => {
         if (res.data.length > 0) setResumeUrl(res.data[0].file);
       })

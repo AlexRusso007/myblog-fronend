@@ -8,7 +8,7 @@ function Playground() {
   const [thoughts, setThoughts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/thoughts/')
+    axios.get('https://myblog-4thg.onrender.com/api/thoughts/')
       .then((res) => setThoughts(res.data))
       .catch(() => {});
   }, []);

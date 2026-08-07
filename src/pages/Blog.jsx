@@ -10,7 +10,7 @@ function Blog() {
   const [expanded, setExpanded] = useState({});
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/posts/')
+    axios.get('https://myblog-4thg.onrender.com/api/posts/')
       .then((res) => {
         setPosts(res.data);
         setLoading(false);

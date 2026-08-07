@@ -17,7 +17,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://127.0.0.1:8000/api/contact/', { email, message })
+    axios.post('https://myblog-4thg.onrender.com/api/contact/', { email, message })
       .then(() => {
         setStatus('success');
         setEmail('');
