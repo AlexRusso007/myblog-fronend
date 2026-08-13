@@ -5,13 +5,28 @@ import './Home.css';
 function Home() {
   const [resumeUrl, setResumeUrl] = useState(null);
 
+  // useEffect(() => {
+  //   axios.get('https://myblog-4thg.onrender.com/api/resume/')
+  //     .then((res) => {
+  //       if (res.data.length > 0) setResumeUrl(res.data[0].file);
+  //     })
+  //     .catch(() => {});
+  // }, []);
+
+
   useEffect(() => {
-    axios.get('https://myblog-4thg.onrender.com/api/resume/')
-      .then((res) => {
-        if (res.data.length > 0) setResumeUrl(res.data[0].file);
-      })
-      .catch(() => {});
-  }, []);
+  axios.get('https://myblog-4thg.onrender.com/api/resume/')
+    .then((res) => {
+      console.log("Resume response:", res.data);
+
+      if (res.data.length > 0) {
+        setResumeUrl(res.data[0].file);
+      }
+    })
+    .catch((err) => {
+      console.error("Resume error:", err);
+    });
+}, []);
 
   return (
     <div className="hero-page">
